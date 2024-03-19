@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <ul>
+            <li> <a href="">Meist </a></li>
+            <li> <a href="">Autod </a></li>
+            <li> <a href="">Kontaktid </a></li>
+        </ul>
+
+        <h2>Best Car Shop </h2>
+        <p>Siin on suurim valik Tallinnas!</p>
+        <!--<div class="sketchfab-embed-wrapper"> 
+            <iframe title="Cartoon Car" frameborder="0"
+            width="400" height="300"  mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/09431a8df4344a84aa83a4095bef10fc/embed?autostart=1&amp;autospin=1&amp;ui_stop=0&amp;ui_infos=0">
+         </iframe>
+       </div>-->
+
+       <audio autoplay src="website-music.mp3"></audio>
+
+       <button class="animated">More info</button>
+
+
+       
+    </div>
+
+        <div class="text123">
+        <h2 class="txt">Gallery</h2>
+        <h2 class="txt2">siin on meie kõige ilusamad autod</h2>
+        </div>
+
+       <div class="image-wrapper" id="wrapper">
+        <img src="images/img1.jpg" alt="" id="fullImg">
+        <span>X</span>
+       </div>
+    </div>
+       <div class="img-gallery">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+            <img src="images/img3.jpg" alt="">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+            <img src="images/img3.jpg" alt="">
+            <img src="images/img1.jpg" alt="">
+            <img src="images/img2.jpg" alt="">
+       </div>
+
+       <main>
+            <div class="signup">
+                <span>Saa meie kliendiks!</span>
+                <button type="button" class="sign-up-btn">sign up</button>
+            </div>
+
+            <div class="login">
+                <span>Oled juba meie klient?</span>
+                <button type="button" class="log-in-btn">Log in</button>
+            </div>
+
+            <div class="back-layer">
+            <form action="" class="login-form active">
+                <h2 class="login-label">Log In</h2>
+                <input type="email" id="lemail" placeholder="Sinu email"/>
+                <input type="password" id="password" placeholder="Sisesta oma parool">
+                <button type="button">Log in</button>
+            </form>
+            <form action="" class="signup-form">
+                <h2>SignUp</h2>
+                <input type="text" id="f-name" placeholder="Eesnimi"/>
+                <input type="text" id="s-name" placeholder="Perekonnanimi"/>
+                <input type="email" id="s-email" placeholder="Sinu email">
+                <input type="password" id="s-password" placeholder=Sisesta parool>
+                <button type="buttton">Loo konto</button>
+            </form>
+            </div>
+        </main>
+
+        <div class="container">
+            <i class="fa-solid fa-magnifying-glass magnifier"></i>
+            <input class="input" type="text" placeholder="Search..">
+            <i class="fa-solid fa-microphone mic-icon"></i>
+        </div>
+
+        <!--<iframe width="560" height="315"
+            src="https://www.youtube.com/embed/JhYIYuys6hM?si=FCBcmfZ80Woe3sS8"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>-->
+
+        <div style="text-align: center;">
+            <h2 class="bmwtxt">BMW</h2>
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeNormal()">Normal</button>
+            <button onclick="makeSmall()">Small</button>
+            <br><br>
+
+            <video id="bmw" src="video.mp4" autoplay muted loop></video>
+            
+            
+        </div>
+
+        <button class="cta-btn" id="open">wright email</button>
+
+<section class="modal-container" id="modal">
+    <section class="modal">
+        <button class="close-btn" id="close">X</button>
+        <div class="modal-content">
+            <h1>Wright email</h1>
+            <form class="modal-form">
+                <div>
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" class="form-input" placeholder="Wright your name">
+                </div>
+                <div>
+                    <label for="email">Your email</label>
+                    <input type="email" id="email" class="form-input" placeholder="Wright your email">
+                </div>
+                        
+                <div>
+                    <label for="telefon">Your phone number</label>
+                    <input type="text" id="telefon" class="form-input" placeholder="Enter your phone number">
+                </div>
+
+                <div>
+                    <label for="sonum">Your message</label>
+                    <input type="text" id="sonum" class="form-input" placeholder="Your message">
+                </div>
+
+                <input type="submit" value="submit" class="submit-btn">
+            </form>
+        </div>
+    </section>
+
+</section>
+
+<footer>
+    <div class="footer-content">
+        <h3>Best Car Shop</h3>
+        <p>Siin saab parimat autod Tallinnas</p>
+        <ul class="socials">
+            <li> <a href="https://www.facebook.com"><i class="fa fa-facebook"></i> </a> </li>
+            <li> <a href="https://www.youtube.com"><i class="fa fa-youtube"></i> </a> </li>
+            <li> <a href="https://twitter.com"><i class="fa fa-twitter"></i> </a> </li>
+            <li> <a href="https://www.viber.com"><i class="fa fa-viber"></i> </a> </li>
+            <li> <a href="https://www.instagram.com"><i class="fa fa-instagram"></i> </a> </li>
+        </ul>
+    </div>
+
+<div class="footer-bottom">
+    <p>copyright &copy;2024 Best Car Shop. designed by <span>Studio Nothing</span></p>
+</div>
+
+</footer>
+
+
+        
+
+        <script>
+            var myVideo=document.getElementById("bmw")
+
+            function playPause()
+            {
+                if(myVideo.paused)
+                    myVideo.play();
+                else
+                    myVideo.pause();
+            }
+
+            function makeBig()
+            {
+                myVideo.width=1100;
+            }
+
+            function makeNormal()
+            {
+                myVideo.width=800;
+            }
+
+            function makeSmall()
+            {
+                myVideo.width=700;
+            }
+            
+
+
+            
+        </script>
+       <script src="app3.js"></script>
+       <script src="app.js"></script>
+       <script src="app1.js"></script>
+       <script src="app2.js"></script>
+       
+       
+</body>
+</html>
